@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="3dp"
+        app:cardCornerRadius="6dp">
+        
+        
+        <LinearLayout
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/main_activity_item_imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cabbages"/>
+
+            <TextView
+                android:id="@+id/main_activity_item_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heavy Cabbages"/>
+
+            <TextView
+                android:id="@+id/main_activity_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@Ksh 200"/>
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Order Now" />
+
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

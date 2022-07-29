@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayActivity">
+
+    <TextView
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:id="@+id/main_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="ORDER NOW"
+        android:background="#4CAF50"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/main_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pay_product_image"
+                    android:layout_weight="1"
+                    android:src="@drawable/cabbages"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pay_product_name"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cabbage"/>
+
+                    <TextView
+                        android:id="@+id/pay_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\@Khs 120"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/pay_full_names_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Names"/>
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/pay_location_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"/>
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/pay_phone_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MPesa Number"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/pay_amount_edtx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"/>
+
+            <Button
+                android:id="@+id/pay_submit_order_btn"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit your order"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
